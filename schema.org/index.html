@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>404 - Page Not Found</title>
+
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="shortcut icon" href="https://minersy.com/assets/panel/media/logos/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+<link rel="stylesheet"
+  href="https://minersy.com/assets/panel/plugins/global/plugins.light.bundle.css">
+<link rel="stylesheet" href="https://minersy.com/assets/panel/css/style.light.bundle.css">
+<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQQ0SGYWD8" type="89b38597077a2a33698b90e8-text/javascript"></script>
+<script type="89b38597077a2a33698b90e8-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZQQ0SGYWD8');
+</script>
+<!-- Google tag (gtag.js) -->
+
+
+<script async src="https://appsha-prm.ctengine.io/js/script.js?wkey=2ETA2qlJae" type="89b38597077a2a33698b90e8-text/javascript"></script>        
+    </head>
+
+    <body id="kt_body" class="bg-body">
+        <div class="d-flex flex-column flex-root">
+			<!--begin::404 Page-->
+			<div class="d-flex flex-column flex-center flex-column-fluid p-10">
+				<!--begin::Illustration-->
+				<img src="https://minersy.com/assets/panel/media/illustrations/dozzy-1/18.png" alt="" class="mw-100 mb-10 h-lg-450px" />
+				<!--end::Illustration-->
+				<!--begin::Message-->
+				<h1 class="fw-bold mb-10" style="color: #A3A3C7">The page you were looking for was not found!</h1>
+				<!--end::Message-->
+				<!--begin::Link-->
+				<a href="https://minersy.com/" class="btn btn-primary">Back to Home Page</a>
+				<!--end::Link-->
+			</div>
+			<!--end::404 Page-->
+		</div>
+
+        <script src="https://minersy.com/assets/panel/plugins/global/plugins.bundle.js" type="89b38597077a2a33698b90e8-text/javascript"></script>
+<script src="https://minersy.com/assets/panel/js/scripts.bundle.js" type="89b38597077a2a33698b90e8-text/javascript"></script>
+<script type="89b38597077a2a33698b90e8-text/javascript">
+    Inputmask('decimal', {
+        digits:8,
+        digitsOptional: false,
+        rightAlign: false,
+        allowMinus:false,
+        removeMaskOnSubmit: true
+    }).mask(".decimal8");
+
+    Inputmask('decimal', {
+        digits:5,
+        digitsOptional: false,
+        rightAlign: false,
+        allowMinus:false,
+        removeMaskOnSubmit: true
+    }).mask(".decimal5");
+
+    Inputmask('decimal', {
+        digits:2,
+        digitsOptional: false,
+        rightAlign: false,
+        allowMinus:false,
+        removeMaskOnSubmit: true
+    }).mask(".decimal2");
+</script>
+
+<!-- Alerts-->
+
+<!-- notifications -->
+<script type="89b38597077a2a33698b90e8-text/javascript">
+    $(document).on('click', '.btn-notification-item', function () {
+        var id = $(this).attr('data-id');
+        
+        $.get("https://minersy.com/account/notifications/view/" + id)
+            .done(function (result) {
+                Swal.fire({
+                    title: "#" + id + "  - Notification",
+                    html: result,
+                    width: 600,
+                    confirmButtonText: 'Close'
+                });
+            })
+            .fail(function () {
+                Swal.fire({
+                    title: "Something went wrong!",
+                    text: "The operation you wanted to perform could not be completed. Please try again.",
+                    icon: "error",
+                    confirmButtonText: 'Okay'
+                });
+            });
+    });
+
+    $(document).on('click', '#header_notifications', function () {
+        var created_at = $(this).attr('data-last-created-at');
+        $('#nanimation').remove();
+        document.cookie = 'last_notification_created_at=' + created_at;
+    });
+</script>    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="89b38597077a2a33698b90e8-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"38ff5baac7a34e689addd7c3d6ac898f","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
